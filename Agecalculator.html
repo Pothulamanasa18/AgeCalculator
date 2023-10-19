@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <script src="script.js"></script>
+    <style>
+         body {
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+         }
+         .container {
+        background-color: black;
+        border-radius: 25px;
+        height: 260px;
+        width: 370px;
+        
+      }
+        .result{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            height: 42px;
+            margin: 15px;
+            padding: 12px;
+            margin-top: -140px;
+            font-size: 16px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+ <body>
+    <div class="container">
+        <div class="container">
+            <h1 style="text-align: center;
+            margin-top: 90px;
+            color: white;
+    "> Age Calculator</h1>
+            <input type="date" id="date-input" style="border-radius: 25px;
+            border: none;
+            padding: 9px 28px;
+            margin-left: 38px;"> 
+            <button onclick="ageCalculate()" 
+            style="border-radius: 35px;
+            background-color: white;
+            padding: 9px 28px;
+            border: none;
+            background-color: bisque;">Calculate</button>
+        </div>
+        <div class="outputs-wrapper" style="display: flex;justify-content: center;">
+            <div class="result">
+                <span id="years">-</span>
+                <p> Years</p>
+            </div>
+            <div class="result">
+                <span id="months">-</span>
+                <p> Months</p>
+            </div>
+            <div class="result">
+                <span id="days">-</span>
+                <p>days</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
